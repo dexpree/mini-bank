@@ -1,0 +1,121 @@
+/* =========================
+   INTRO PAGE CONTAINER
+========================= */
+
+.intro-container {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  background: radial-gradient(circle at center,#020617,#020617,#000c2f);
+
+  overflow: hidden;
+  padding: 20px;
+
+  animation: fadeIn 1.5s ease;
+}
+
+
+/* =========================
+   ANIMATION SIZE
+========================= */
+
+.intro-animation {
+  width: 420px;
+  max-width: 90%;
+  margin-bottom: 20px;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.intro-title {
+  font-size: 40px;
+  font-weight: 900;
+  margin-top: 10px;
+
+  background: linear-gradient(90deg,#38bdf8,#a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: glowText 2s infinite alternate;
+}
+
+
+/* =========================
+   SUBTITLE
+========================= */
+
+.intro-subtitle {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #cbd5f5;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   GLOW EFFECT
+========================= */
+
+@keyframes glowText {
+
+  from {
+    text-shadow: 0 0 10px #38bdf8;
+  }
+
+  to {
+    text-shadow: 0 0 40px #a78bfa;
+  }
+
+}
+
+
+/* =========================
+   FADE ANIMATION
+========================= */
+
+@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width:768px) {
+
+  .intro-animation {
+    width: 300px;
+  }
+
+  .intro-title {
+    font-size: 28px;
+  }
+
+  .intro-subtitle {
+    font-size: 14px;
+  }
+
+}
+

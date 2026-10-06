@@ -1,0 +1,197 @@
+/* PAGE */
+
+.register-wrapper{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: radial-gradient(circle at top left,#1e293b,#020617 70%);
+  overflow:hidden;
+  padding:20px;
+  position:relative;
+}
+
+/* FLOATING BLOBS */
+
+.blob{
+  position:absolute;
+  border-radius:50%;
+  filter:blur(80px);
+  opacity:0.6;
+}
+
+.blob1{
+  width:300px;
+  height:300px;
+  background:#2563eb;
+  top:-50px;
+  left:-50px;
+}
+
+.blob2{
+  width:250px;
+  height:250px;
+  background:#9333ea;
+  bottom:-50px;
+  right:-40px;
+}
+
+.blob3{
+  width:200px;
+  height:200px;
+  background:#06b6d4;
+  bottom:20%;
+  left:10%;
+}
+
+/* CARD */
+
+.register-card{
+  width:960px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.12);
+  padding:40px;
+  border-radius:20px;
+  backdrop-filter:blur(16px);
+  box-shadow:0 20px 60px rgba(0,0,0,0.6);
+}
+
+/* HEADER */
+
+.register-header{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+}
+
+.register-logo{
+  font-size:36px;
+}
+
+.register-header h2{
+  color:#38bdf8;
+  font-weight:900;
+}
+
+.register-subtitle{
+  text-align:center;
+  margin-bottom:25px;
+  color:#cbd5e1;
+}
+
+/* FORM GRID */
+
+.register-form{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:54px;
+}
+
+/* INPUTS */
+
+.register-form input,
+.register-form select{
+
+  padding:12px;
+
+  border-radius:42px;
+
+ 
+
+  background:rgba(239, 239, 238, 0.263);
+
+  color:rgba(162, 255, 0, 0.967);
+
+  outline:none;
+
+  transition:0.25s;
+}
+
+.register-form input:focus,
+.register-form select:focus{
+
+  border-color:#86826d;
+
+  box-shadow:0 0 10px rgba(56,189,248,0.5);
+}
+
+/* BUTTON */
+
+.register-btn{
+
+  margin-top:25px;
+
+  width:100%;
+
+  padding:14px;
+
+  border:none;
+
+  border-radius:14px;
+
+  font-weight:900;
+
+  font-size:15px;
+
+  background:linear-gradient(135deg,#2563eb,#0ea5e9);
+
+  color:white;
+
+  cursor:pointer;
+
+  transition:0.25s;
+}
+
+.register-btn:hover{
+
+  transform:translateY(-2px);
+
+  box-shadow:0 10px 25px rgba(37,99,235,0.6);
+}
+
+.register-btn:disabled{
+
+  opacity:0.5;
+
+  cursor:not-allowed;
+}
+
+/* FOOTER */
+
+.register-footer{
+
+  margin-top:18px;
+
+  text-align:center;
+
+  color:#cbd5e1;
+}
+
+.register-footer span{
+
+  color:#38bdf8;
+
+  cursor:pointer;
+
+  font-weight:700;
+}
+
+/* BACK BUTTON */
+
+.back-btn{
+
+  position:absolute;
+
+  top:20px;
+
+  left:20px;
+
+  border:none;
+
+  background:transparent;
+
+  color:#94a3b8;
+
+  cursor:pointer;
+}

@@ -1,0 +1,125 @@
+/* ===========================
+   GLOBAL THEME VARIABLES
+=========================== */
+:root {
+  --primary: #38bdf8;
+  --primary-dark: #0ea5e9;
+
+  --danger: #ef4444;
+  --success: #22c55e;
+  --warning: #f59e0b;
+
+  --bg: radial-gradient(circle at top left, #0f172a, #1e293b 70%);
+  --card-bg: rgba(255, 255, 255, 0.06);
+  --input-bg: rgba(255, 255, 255, 0.08);
+
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+
+  --border: rgba(255, 255, 255, 0.15);
+  --nav-bg: rgba(15, 23, 42, 0.85);
+}
+
+/* ===========================
+   GLOBAL BODY
+=========================== */
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  padding: 155px;
+}
+
+/* ===========================
+   COMMON LAYOUT
+=========================== */
+.page-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 95px;
+}
+
+/* ===========================
+   COMMON CARD
+=========================== */
+.card {
+  background: var(--card-bg);
+  padding: 100px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  transition: 0.3s ease;
+}
+
+/* ===========================
+   COMMON BUTTONS
+=========================== */
+button {
+  padding: 15px 50px;
+  border-radius: 38px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.3s ease;
+  margin-block: 50px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ===========================
+   COMMON INPUT
+=========================== */
+input {
+  width: 90%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--input-bg);
+  color: var(--text);
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid var(--primary);
+  box-shadow: 0px 0px 10px rgba(56, 189, 248, 0.5);
+}
+
+/* ===========================
+   STATUS BADGES
+=========================== */
+.status-badge {
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: 800;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.status-badge.active {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.status-badge.frozen {
+  background: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.status-badge.blocked {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
